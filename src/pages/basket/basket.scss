@@ -1,0 +1,122 @@
+.basket-item-wrapper {
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+}
+
+.merchant {
+  padding: 12px 24px 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.price-title {
+  color: #e51a4b;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.numaric-counter-left,
+.numaric-counter-right {
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #fafafa;
+  width: 24px;
+  height: 34px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &.numaric-counter-left {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  &.numaric-counter-right {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+.counter-content {
+  font-size: 14px;
+  width: 42px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 34px;
+  color: #4a4a4a;
+  border: none;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+  background-color: #ffffff;
+}
+
+.summary-box {
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.summary-box-prices {
+  padding: 15px;
+}
+
+.confirm-cart-btn {
+  width: 100%;
+  height: 48px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #e51a4b;
+  background: linear-gradient(180deg, #e51a4b, #47004a);
+}
+
+@media screen and (min-width: 1536px) {
+  .basket-section {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .basket-div {
+    display: block;
+  }
+  .basket-div-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .basket-div-items{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .basket-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    div img{
+      margin-bottom: 20px;
+    }
+    .cargo-delivery{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+ }
+}

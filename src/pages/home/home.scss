@@ -1,0 +1,128 @@
+.home-slider {
+  margin: 30px;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.highlights-title {
+  color: white;
+}
+
+.home-slider-div {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #121212;
+}
+
+.home-slider-div:hover {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #121212;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 3px 5px 5px 3px hsla(0, 17%, 91%, 0.12),
+    0 1px 2px hsla(0, 22%, 93%, 0.24);
+}
+
+.slick-slider {
+  max-width: 100%;
+}
+
+.book-title {
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.authors-title {
+  color: white;
+}
+
+.basket-btn {
+  width: 50%;
+  height: 32px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid #e51a4b;
+  background: linear-gradient(180deg, #e51a4b, #47004a);
+}
+.basket-btn-title {
+  color: white;
+  font-size: 16px;
+}
+
+.basket-btn-title-add {
+  color: rgb(245, 237, 237);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price-title {
+  color: #e51a4b;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+h2 {
+  color: #333;
+}
+
+.search-container {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-input input {
+  border: 1px solid rgb(236, 236, 236);
+  width: 380px !important;
+}
+
+.search-input input:focus {
+  border: 1px solid rgb(236, 236, 236);
+  width: 380px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .book-title {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .authors-title {
+    font-size: 12px;
+  }
+  .basket-btn {
+    width: 100%;
+  }
+  .search-input input {
+    width: 100% !important;
+    font-size: 12px;
+    &:focus {
+      width: 100% !important;
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .highlights-title {
+    font-size: 20px !important;
+  }
+  .home-slider div {
+    display: block !important;
+  }
+  svg {
+    display: none !important;
+  }
+}
